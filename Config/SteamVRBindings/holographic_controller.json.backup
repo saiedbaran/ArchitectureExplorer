@@ -1,0 +1,96 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "application.generated.ue.architecturevr-13144385.ue4editor.exe",
+   "bindings" : {
+      "/actions/main" : {
+         "haptics" : [
+            {
+               "output" : "/actions/main/out/vibrateleft",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/main/out/vibrateright",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/main/in/controllerleft",
+               "path" : "/user/hand/left/pose/raw",
+               "requirement" : "optional"
+            },
+            {
+               "output" : "/actions/main/in/controllerright",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "skeleton" : [
+            {
+               "output" : "/actions/main/in/skeletonleft",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "output" : "/actions/main/in/skeletonright",
+               "path" : "/user/hand/right/input/skeleton/right"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/Teleport"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "north" : {
+                     "output" : "/actions/main/in/moveforward axis"
+                  }
+               },
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "touch"
+               },
+               "path" : "/user/hand/left/input/joystick"
+            },
+            {
+               "inputs" : {},
+               "mode" : "joystick",
+               "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {},
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {},
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/main/in/moveforward axis"
+                  },
+                  "touch" : {
+                     "output" : "/actions/main/in/teleport"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/trackpad"
+            }
+         ]
+      }
+   },
+   "category" : "steamvr_input",
+   "controller_type" : "holographic_controller",
+   "description" : "ArchitectureVR-13144385",
+   "name" : "Saved ArchitectureVR-13144385 [UE Editor] configuration for Windows Mixed Reality Controller",
+   "options" : {},
+   "simulated_actions" : []
+}
